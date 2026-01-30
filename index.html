@@ -85,6 +85,66 @@
             font-style: italic;
         }
 
+        .verified-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .verified-section h2 {
+            color: #6c71c4;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #6c71c4;
+            padding-bottom: 0.5rem;
+        }
+
+        .verified-list {
+            list-style: none;
+        }
+
+        .verified-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .verified-list li:last-child {
+            border-bottom: none;
+        }
+
+        .business-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .business-location {
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        .closure-type {
+            background: #6c71c4;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .verified-note {
+            color: #666;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
         .form-container {
             background: white;
             border-radius: 8px;
@@ -141,6 +201,20 @@
             <p><strong>Friday, January 30, 2026:</strong> A general strike has been called. We're tracking which local businesses are participating by closing or reducing hours.</p>
             <p>If you've seen a business announce they're closing for the strike, let us know! Share a link to their announcement or upload a screenshot.</p>
             <p><strong>Coverage area:</strong> Banks, Forest Grove, Gales Creek, Gaston, and Cornelius.</p>
+        </div>
+
+        <div class="verified-section">
+            <h2>Verified Closures</h2>
+            <ul class="verified-list">
+                <li>
+                    <div>
+                        <span class="business-name">Valley Art Association</span>
+                        <span class="business-location">Forest Grove</span>
+                    </div>
+                    <span class="closure-type">Closing all day</span>
+                </li>
+            </ul>
+            <p class="verified-note">Know of a business we're missing? Submit it below!</p>
         </div>
 
         <p class="form-note">Scroll down and wait a moment for the form to load.</p>
